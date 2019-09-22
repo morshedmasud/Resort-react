@@ -8,15 +8,20 @@ import Home from "./pages/Home";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
 import Rooms from "./pages/Rooms";
+import Navbar from "./components/Navbar";
 
 
 const App = () => {
    return (
       <>
-         <Route path="/"  component={Home}/>
-         <Route path="/rooms" component={Rooms}/>
-         <Route path="/single-room" component={SingleRoom}/>
-         <Route path="/error" component={Error}/>
+         <Navbar/>
+         <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/rooms" exact component={Rooms}/>
+            <Route path="/rooms/:slug" exact component={SingleRoom}/>
+            <Route component={Error}/>
+         </Switch>
+
 
       </>
    )
