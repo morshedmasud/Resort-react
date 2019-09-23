@@ -5,7 +5,7 @@ class SingleRoom extends React.Component {
    render() {
       return (
          <div>
-            From single page
+            From single Room
          </div>
       )
    }

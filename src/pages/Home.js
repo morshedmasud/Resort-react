@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
+import FeaturedRooms from "../components/FeaturedRooms";
 
 const Home = () => {
    return (
@@ -16,8 +17,8 @@ const Home = () => {
             </Banner>
          </Hero>
          <Services>
-
          </Services>
+         <FeaturedRooms/>
       </>
    )
 };
