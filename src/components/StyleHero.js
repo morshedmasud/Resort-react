@@ -9,5 +9,4 @@ const StyledHero = styled.header`
   align-items: center;
   justify-content: center;
 `;
-
 export default StyledHero;
